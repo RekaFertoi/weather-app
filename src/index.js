@@ -75,8 +75,3 @@ function currentWeather() {
 
 let currentbutton = document.querySelector("#current-button");
 currentbutton.addEventListener("click", currentWeather);
-
-// }
-
-// let currentPos = document.querySelector("#current-button");
-// currentPos.addEventListener("click", currentWeather);
