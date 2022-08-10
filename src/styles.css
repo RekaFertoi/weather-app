@@ -32,22 +32,7 @@ form input {
   color: black;
   opacity: 100%;
 }
-.cbuttonhover {
-  padding: 10px;
-  border-radius: 4px;
-  font-size: 10px;
-  opacity: 0.9;
-  color: black;
-  background-color: #92fff0;
 
-  transition: all 200ms ease-in-out;
-  box-shadow: 5px 5px 5px grey;
-}
-.cbuttonhover:hover {
-  background-color: #0dfafa;
-  color: black;
-  opacity: 100%;
-}
 p {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;

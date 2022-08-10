@@ -51,27 +51,3 @@ function searchCity(event) {
 
 let newcity = document.querySelector("#go-button");
 newcity.addEventListener("click", searchCity);
-
-// current position
-function currentWeather() {
-  function showTemp(response) {
-    let currentPosTemp = Math.round(response.data.main.temp);
-    let changetempinput = document.querySelector("#temp-cels");
-    changetempinput.innerHTML = currentPosTemp;
-  }
-
-  function showPosition(position) {
-    let longi = position.coords.longitude;
-    let lati = position.coords.latitude;
-    let units = "metric";
-    let apiKey = "0338b821f57d8e8b5a5015ec385d4b83";
-    let apiEndPoint = "https://api.openweathermap.org/data/2.5/weather";
-    let apiUrl = `${apiEndPoint}?lat=${lati}&lon=${longi}&appid=${apiKey}&units=${units}`;
-
-    axios.get(apiUrl).then(showTemp);
-  }
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-
-let currentbutton = document.querySelector("#current-button");
-currentbutton.addEventListener("click", currentWeather);
