@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+   
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&display=swap"
+      rel="stylesheet"
+    />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>  
+ <link rel="stylesheet" href="src/styles.css" />  
+    </head>
+  <body>
+    <div class="container">
+      <div class="weatherapp">
+     
+      <form id="city-name">
+        <input type="text"; placeholder="Enter city" id="input-city">
+        <input type="submit" value="Go" id="go-button" class="buttonhover">
+        <input type="submit" value="Current" id="current-button" class="cbuttonhover">
+      </form>
+      <div class="city" id="current-city"> Madrid </div>
+      <div class="row">
+        <div class="col-4">
+            <p>
+                <span id="date-today">14 July 2022 </span> <br/>
+                <span id="w-description">Sunny</span>
+            </p>
+        </div>
+       
+      </div>
+      <div class="row">
+        <div class="col-4">
+              <p> 
+              <span class="temp" id="temp-cels" > 34 </span>
+              <span class="unit">
+                  <a class= "unitlink" href="#" id="cels-link">°C</a>
+                  <!-- <a class= "unitlink" href="#" id="fahr-link">°F</a> -->
+                </span>
+              <img src="https://img.icons8.com/office/344/sun--v1.png" alt="" class="sun">
+            </p>
+        </div>    
+        <div class="col-4">
+            <p>
+              <span class="humAndWind" id="hum">Humidity: </span><br/>
+                <span id="wind">Wind: </span>
+            </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+            <strong>Fri</strong>
+            <br/>
+            <img src="https://img.icons8.com/office/344/sun--v1.png" alt="">
+            <br/>
+            <div class="doubletemp">
+                <strong>33</strong>/17°C
+            </div>
+        </div>
+         <div class="col-2">
+            <strong>Sat</strong>
+            <br/>
+            <img src="https://img.icons8.com/office/344/sun--v1.png" alt="">
+            <br/>
+            <div class="doubletemp">
+                <strong>36</strong>/22°C
+            </div>
+        </div>
+         <div class="col-2">
+            <strong>Sun</strong>
+             <br/>
+            <img src="https://img.icons8.com/office/344/sun--v1.png" alt="">
+            <br/>
+            <div class="doubletemp">
+                <strong>38</strong>/25°C
+            </div>
+        </div>
+         <div class="col-2">
+            <strong>Mon</strong>
+             <br/>
+            <img src="https://img.icons8.com/office/344/sun--v1.png" alt="">
+            <br/>
+            <div class="doubletemp">
+                <strong>40</strong>/25°C
+            </div>
+        </div>
+         <div class="col-2">
+            <strong>Tue</strong>
+             <br/>
+            <img src="https://img.icons8.com/office/344/chance-of-storm.png" alt="">
+            <br/>
+            <div class="doubletemp">
+                <strong>38</strong>/22°C
+            </div>
+        </div>
+         <div class="col-2">
+            <strong>Wed</strong>
+             <br/>
+            <img src="https://img.icons8.com/office/344/partly-cloudy-day--v1.png" alt="">
+            <br/>
+            <div class="doubletemp">
+                <strong>33</strong>/19°C
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js">
+	</script>
+  </body>
+</html>

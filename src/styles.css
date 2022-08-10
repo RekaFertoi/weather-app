@@ -1,0 +1,121 @@
+body {
+  background: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+}
+form input {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  color: black;
+  box-shadow: 5px 5px 5px grey;
+  font-style: italic;
+}
+.buttonhover {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  opacity: 0.9;
+  color: black;
+  background-color: #f3ff92;
+
+  transition: all 200ms ease-in-out;
+  box-shadow: 5px 5px 5px grey;
+}
+.buttonhover:hover {
+  background-color: #f6ce59;
+  color: black;
+  opacity: 100%;
+}
+.cbuttonhover {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  opacity: 0.9;
+  color: black;
+  background-color: #92fff0;
+
+  transition: all 200ms ease-in-out;
+  box-shadow: 5px 5px 5px grey;
+}
+.cbuttonhover:hover {
+  background-color: #0dfafa;
+  color: black;
+  opacity: 100%;
+}
+p {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+img {
+  width: 28px;
+  margin: auto;
+  display: inline-block;
+  vertical-align: left !important;
+}
+.sun {
+  position: relative;
+  top: -24px;
+  width: 17px;
+}
+.col-2 {
+  text-align: center;
+}
+.doubletemp {
+  font-size: 12px;
+  padding-top: 5px;
+  opacity: 80%;
+}
+.weatherapp {
+  background-color: #fffcef;
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+.welcome {
+  color: #000000;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  font-size: 20px;
+}
+.temp {
+  font-size: 45px;
+  text-align: left;
+  position: relative;
+}
+.col-9 {
+  float: left !important;
+}
+.unit {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+.unitlink {
+  text-decoration: none;
+  color: #212529;
+  position: relative;
+  top: -23px;
+}
+.city {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.col-4 {
+  margin-top: 10px;
+}
+.col-3 {
+  margin-top: 10px;
+}
