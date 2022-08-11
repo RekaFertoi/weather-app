@@ -13,7 +13,7 @@ form input {
   border-radius: 4px;
   font-size: 10px;
   color: black;
-  box-shadow: 5px 5px 5px grey;
+  /* box-shadow: 5px 5px 5px grey; */
   font-style: italic;
 }
 .buttonhover {
@@ -48,8 +48,8 @@ img {
 }
 .sun {
   position: relative;
-  top: -24px;
-  width: 17px;
+  top: -50px;
+  width: 46px;
 }
 .col-2 {
   text-align: center;
@@ -77,6 +77,8 @@ img {
   font-size: 45px;
   text-align: left;
   position: relative;
+  top: -37px;
+  left: 10px;
 }
 .col-9 {
   float: left !important;
@@ -92,7 +94,7 @@ img {
   text-decoration: none;
   color: #212529;
   position: relative;
-  top: -23px;
+  top: -59px;
 }
 .city {
   font-size: 25px;
@@ -108,4 +110,9 @@ img {
 small {
   font-size: 80%;
   font-weight: 400;
+  max-width: 600px;
+}
+.humAndWind {
+  position: relative;
+  top: -32px;
 }
