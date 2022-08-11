@@ -104,3 +104,8 @@ img {
 .col-3 {
   margin-top: 10px;
 }
+.small,
+small {
+  font-size: 80%;
+  font-weight: 400;
+}
