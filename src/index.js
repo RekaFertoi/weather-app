@@ -1,9 +1,15 @@
 // calculate date and time
 function changeDate() {
-  let now = new Date();
-  let date = now.getDate();
-  let hour = now.getHours();
+  let hour = date.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
   let minute = now.getMinutes();
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
+
+  let weekdays = date.getDay();
   let days = [
     "Sunday",
     "Monday",
@@ -13,9 +19,9 @@ function changeDate() {
     "Friday",
     "Saturday",
   ];
-  let day = days[now.getDay()];
-  let currentdate = document.querySelector("#date-today");
-  currentdate.innerHTML = day + " " + hour + ":" + minute;
+  let day = days[weekdays];
+
+  return `${day} ${hour}:${minute}`;
 }
 
 let newdate = document.querySelector("#go-button");
@@ -40,7 +46,7 @@ function searchCity(event) {
     let humInput = document.querySelector("#hum");
     humInput.innerHTML = `Humidity: ${response.data.main.humidity}%`;
     let windInput = document.querySelector("#wind");
-    windInput.innerHTML = `Wind: ${response.data.wind.speed} km/h`;
+    windInput.innerHTML = `Wind: ${Math.round(response.data.wind.speed)} km/h`;
     console.log(response);
     let description = document.querySelector("#w-description");
     description.innerHTML = response.data.weather[0].main;
